@@ -1,0 +1,139 @@
+
+
+.estilolinks {
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(77, 230, 235);
+    padding: 1rem;   
+    
+} 
+
+.descripciones{
+    font-style:oblique; font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 80%;
+}
+
+@keyframes colores{
+    0%{color: red}
+    50%{color:green}
+    75%{color:yellow}
+    100%{color: red}
+}
+
+.coloreado{
+   animation-name: colores;
+   animation-iteration-count: infinite;
+   animation-timing-function: ease-in;
+   animation-duration: 6s;
+   animation-delay: 1s;
+   font-family: Teko, Geneva, Tahoma, sans-serif;
+}
+ 
+.grillahome{
+    display: grid;
+    padding: 1rem;
+    grid-gap: 1rem;
+    grid-template-columns: 25% 25% 22% 20%;
+   
+    grid-template-areas:        
+    "logo marca marca marca"
+    "productos productos servicios servicios"
+    "productos productos servicios servicios"        
+    "ofertas ofertas ofertas ofertas" ;   
+}
+.estilomarca {
+    font-style:italic;    
+    background-image: url(./img/fondomarca3.jpg);            
+    color: rgb(14, 138, 187);      
+    font-size: 300%;
+    font-family: Chonburi, Verdana, Geneva, Tahoma, sans-serif;   
+    text-shadow: 5px 5px 5px grey;
+    grid-area: marca;    
+    height: 50vh;   
+}
+
+@media (max-width:768px){ /* quitamos el logo en bajas resoluciones y reestructuramos*/
+    .grillahome{        
+        grid-template-areas:        
+        "marca marca marca marca"
+        "productos productos productos productos"
+        "servicios servicios servicios servicios"       
+        "ofertas ofertas ofertas ofertas";   
+    }
+    
+}
+
+
+@keyframes logoanimado{ 
+    0%{background-image: url(./img/logo/logo1.png)}
+    3%{background-image: url(./img/logo/logo2.png)}
+    6%{background-image: url(./img/logo/logo3.png)}
+    9%{background-image: url(./img/logo/logo4.png)}
+    12%{background-image: url(./img/logo/logo5.png)}
+    15%{background-image: url(./img/logo/logo6.png)}
+    18%{background-image: url(./img/logo/logo7.png)}
+    21%{background-image: url(./img/logo/logo8.png)}
+    24%{background-image: url(./img/logo/logo9.png)}
+    27%{background-image: url(./img/logo/logo10.png)}
+    30%{background-image: url(./img/logo/logo11.png)}
+    33%{background-image: url(./img/logo/logo12.png)}
+    36%{background-image: url(./img/logo/logo13.png)}
+    39%{background-image: url(./img/logo/logo14.png)}
+    42%{background-image: url(./img/logo/logo15.png)}
+    45%{background-image: url(./img/logo/logo16.png)}
+    48%{background-image: url(./img/logo/logo17.png)}
+    52%{background-image: url(./img/logo/logo18.png)}
+    55%{background-image: url(./img/logo/logo19.png)}
+    58%{background-image: url(./img/logo/logo20.png)}
+    62%{background-image: url(./img/logo/logo21.png)}
+    65%{background-image: url(./img/logo/logo22.png)}
+    68%{background-image: url(./img/logo/logo23.png)}
+    71%{background-image: url(./img/logo/logo24.png)}
+    74%{background-image: url(./img/logo/logo25.png)}
+    77%{background-image: url(./img/logo/logo26.png)}
+    80%{background-image: url(./img/logo/logo27.png)}
+    83%{background-image: url(./img/logo/logo28.png)}
+    86%{background-image: url(./img/logo/logo29.png)}
+    89%{background-image: url(./img/logo/logo30.png)}
+    92%{background-image: url(./img/logo/logo31.png)}
+    95%{background-image: url(./img/logo/logo32.png)}
+    98%{background-image: url(./img/logo/logo33.png)}
+    100%{background-image: url(./img/logo/logo30.png)}
+} 
+
+.logo{
+    animation-name: logoanimado;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+    animation-duration: 2.5s;
+    animation-delay: 0.1s;
+    background-repeat: no-repeat;
+    background-size: 80% 80%;
+    background-position:center;
+    grid-area: logo;
+    height: 50vh;
+}
+
+.logo:hover{
+    animation-duration: 1s;
+}
+
+.estiloproductoshome{    
+    background-image: url(./img/productos.jpg);    
+    grid-area: productos;   
+    height: 100vh;
+}
+
+.estiloservicioshome{    
+    background-image: url(./img/servicios.jpg);       
+    grid-area: servicios;   
+    height: 100vh;
+}
+.carousel .item {
+    height:max-content;
+}
+
+.estiloiconos{
+    width: 2rem;   
+    height: 2rem;
+    padding: 0.5%;    
+}

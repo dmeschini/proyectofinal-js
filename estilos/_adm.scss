@@ -1,0 +1,23 @@
+body{
+    background-color: grey;
+    background-image: url(./img/cielo.jpg);
+}
+.tituloAdm{    
+    text-align: center;
+    background-color: rgb(0, 140, 255);
+    padding: 1rem;
+}
+.contenedor{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    gap: 3rem;                       
+}
+.oferta{
+    background-image: url(./img/redes.jpg);    
+    background-size:cover;
+    padding: 2rem;
+    gap:2rem;
+    font-family:Arial, Helvetica, sans-serif;
+    color: aqua;
+}

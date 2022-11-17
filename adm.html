@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <div class="tituloAdm">
+    <h2>Página de Administración</h2>
+  </div>
+  
+  <div> <a class="nav-link active" aria-current="page" href="./index.html" >IR AL HOME</a></div>
+  <div id="botonesTest"></div>
+  <h2>Aquí van los productos:</h2>
+      <div class="contenedor">        
+        <div>
+          <button id="botonAgregar" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalProductos" data-bs-whatever="añade">Añadir Producto</button>           
+        </div>
+        <div>
+        <div>
+          <button id="botonModifica" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalProductos" data-bs-whatever="modifica">Buscar Producto</button>
+        </div> 
+        <div>         
+        </div>    
+        <div>            
+            <ul id="listaProductos">
+                
+            </ul>
+        </div>              
+      </div>
+      
+      <div class="modal fade" id="modalProductos" tabindex="-1" data-bs-backdrop="static" data-bs-keyboard="false">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" ></h5>
+              <button id="btncerrar" type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <form id="formulario">
+                <div id="listaModal" class="mb-3">                  
+                   
+                </div>
+              </form>
+            </div>
+            <div id="footerModalProductos"class="modal-footer"> 
+              <button id="botonEliminarProducto" type="button" class="btn btn-danger" >Eliminar Producto</button>             
+              <button type="button" id="botonenviar" class="btn btn-primary">Guardar</button>
+            </div>
+          </div>
+        </div>
+      </div>              
+     
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="./JS/jquery-3.6.0.min.js"></script>
+    <script src="./JS/adm.js"></script>
+    
+</body>
+</html>

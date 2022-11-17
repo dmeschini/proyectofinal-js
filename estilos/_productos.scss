@@ -1,0 +1,46 @@
+.grillaproductos{
+    display: grid;
+    padding: 1rem;
+    grid-gap: 1rem;
+    grid-template-columns: 30% 30% 30%;    
+    grid-template-rows: 33% 33% 33%  ;
+    grid-template-areas:
+    
+    "computadoras redes perifericos"
+    "computadoras redes perifericos"
+    "computadoras redes perifericos";    
+}
+@media (max-width:768px){ /* reestructuramos en bajas resoluciones*/
+    .grillaproductos{        
+        grid-template-areas:        
+        "computadoras computadoras computadoras"
+        "redes redes redes"
+        "perifericos perifericos perifericos" ;   
+    }
+    
+}
+
+.estiloproductos{
+    font-size: 200%;  
+    text-align: center;  
+    color: rgb(0, 183, 255);
+}
+
+.estilocomputadoras{
+    background-image: url(./img/computadoras.jpg);           
+    grid-area: computadoras;
+    height: 100vh;
+}
+
+.estiloredes{
+    background-image: url(./img/redes.jpg);        
+    grid-area:redes;  
+    height: 100vh;
+}
+
+.estiloperifericos{
+    background-image: url(./img/perifericos.jpg);     
+    grid-area:perifericos;
+    height: 100vh;
+}
+

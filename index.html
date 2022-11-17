@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bit & Byte - Computadoras - Servicio Técnico</title>      
+    <link rel="stylesheet" href="./styles.css">    
+    <meta name="description" content="Computadoras, Servicio Técnico, Consultoría informática">
+</head>
+
+<body class="fondo"> 
+
+  <div class="modal fade" id="modalMensajes" tabindex="-1">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" >¡Envíe su Mensaje!</h5>
+          <button id="btncerrar" type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form id="formulario">
+            <div id="listaModal" class="mb-3">                  
+
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">              
+          <button type="button" id="botonenviar" class="btn btn-primary">Enviar Mensaje</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="modalIngreso" tabindex="-1">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" ></h5>
+          <button id="btncerrarLogin" type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form id="formularioLogin">
+            <div id="listaModalLogin" class="mb-3">                  
+              <label for="usuario" class="col-form-label">Usuario</label>
+              <input type="text" class="form-control" id="usuario">
+              <label for="clave" class="col-form-label">Contraseña</label>
+              <input type="text" class="form-control" id="clave">
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">              
+          <button type="button" id="botonenviarLogin" class="btn btn-primary">Enviar Datos</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="modalSalir" tabindex="-1">
+    <div class="modal-dialog">
+      <div class="modal-content">  
+        <div class="modal-header">
+          <h5 >Usted ha salido de la Administración</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>                     
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="modalDolar" tabindex="-1">
+    <div class="modal-dialog">
+      <div class="modal-content">  
+        <div class="modal-header">
+          <h5 >Cotización del Dolar: (Dolar Sí)</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>   
+          <div id="cotizacion" class="modal-body">
+
+          </div>                
+      </div>
+    </div>
+  </div>
+
+    <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light fondo fs-5 ">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">¡Bienvenidos!</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul id="barra" class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="./productos.html" >Productos</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="./servicios.html">Servicios</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="./tienda.html">Tienda</a>
+                  </li>               
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Descubra Bit & Byte
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <li><a class="dropdown-item" href="#" title="Sitio en Construcción">Ofertas Especiales</a></li>
+                      <li><a class="dropdown-item" href="#" title="Sitio en Construcción">Eventos Comerciales</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="./acercade.html">Sobre Nosotros</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="./mapa.html">Mapa del Sitio</a></li>
+                    </ul>
+                  </li> 
+                  <li class="nav-item">
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalMensajes" >Contacto</button>   
+                  </li>                                 
+                  <li class="nav-item">
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalDolar" >Dólar</button>   
+                  </li>   
+                </ul>
+                
+              </div>
+            </div>
+          </nav>
+    </div>       
+
+   <div class="grillahome">
+    <h1 class="estilomarca ajustefondos" > BIT & BYTE INFORMÁTICA</h1>    
+    <section class="logo"></section>
+    <section class="estiloproductoshome ajustefondos estilolinks " >
+    <h2><a href="./productos.html">PRODUCTOS</a></h2>
+    <br>  
+    <h3>COMPUTADORAS</h3>
+    <br>
+    <h3>REDES</h3>
+    <br>
+    <H3>PERIFERICOS</H3>
+    <br>
+    <h4 class="descripciones">Brindamos productos de hardware de variadas marcas y para diversas aplicaciones</h4>    
+    </section> 
+    
+    <section class="estiloservicioshome ajustefondos estilolinks">
+     <h2><a href="./servicios.html">SERVICIOS</a></h2>
+     <br>  
+    <h3>SERVICIO TÉCNICO</h3>
+    <br>
+    <h3>CONSULTORÍA / ASESORÍA</h3>
+    <br>
+    <h4 class="descripciones">Brindamos Soluciones tecnológicas para una gran variedad de necesidades de la industria informática en general</h4>
+    </section>   
+    
+    <section class="ajustefondos ">
+
+      <h2 class="coloreado">OFERTAS</h2>
+
+      <div class="container ">
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+            
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="./img/ofertaconectividad.jpg" class="d-block w-100 " alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5 class="text-info">PRODUCTOS DE CONECTIVIDAD</h5>                     
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="./img/ofertamonitor.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5 class="text-info">MONITORES</h5>                    
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="./img/ofertapc.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5 class="text-info">PC DE ESCRITORIO</h5>                    
+                </div>
+              </div>
+  
+            </div>            
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+     
+    </section> 
+
+   </div>
+
+   <footer class="footer mt-auto py-4 bg-black">
+    <div class="container flexfooter">
+          
+        <span class="text-muted">© By Dany Soft</span>
+        <img src="./img/twiter.png" alt="" class="estiloiconos"> 
+        <img src="./img/instagram.png" alt="" class="estiloiconos">
+        <img src="./img/meta.png" alt="" class="estiloiconos">
+        <span class="text-muted">Horarios de Atención: Lunes a Viernes 09hs a 18hs</span>
+        <span class="text-muted">Teléfono: 123456</span>
+      
+    </div>
+  </footer>  
+
+   <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="./JS/jquery-3.6.0.min.js"></script>
+    <script src="./JS/mensajes.js"></script>
+    <script src="./JS/login.js"></script>
+    <script src="./JS/api-dolar.js"></script>
+</body>
+
+</html>

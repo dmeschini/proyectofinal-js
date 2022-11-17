@@ -1,0 +1,49 @@
+@import "./node_modules/bootstrap/scss/bootstrap.scss";
+@import "./estilos/home";
+@import "./estilos/acercade";
+@import "./estilos/mapa";
+@import "./estilos/productos";
+@import "./estilos/servicios";
+@import "./estilos/tienda";
+@import "./estilos/adm";
+
+/* AJUSTES GENERALES ///////////////////////////////////////////////////////////////////////////*/
+* {
+    margin:0;
+    padding:0;
+    
+ }  
+
+  .fondo{     
+     background-image: url(./img/cielo.jpg);
+     background-size: cover;     
+    }
+
+   a{
+      text-decoration:none;
+   }
+   a:hover{
+      color:lawngreen;
+   }
+   .navbar-nav .nav-item.active .nav-link,
+      .navbar-nav .nav-item:hover .nav-link {
+          color: rgb(96, 182, 11);
+      }
+   .ajustefondos{
+         background-size: cover;
+         background-position: center; 
+         text-align:center;      
+         border-radius: 3%;     
+   }
+   
+   .flexfooter{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+  }
+   @media (max-width:768px){ /* reestructuramos el footer*/
+      .flexfooter{
+      flex-wrap: wrap ;
+      justify-content:center;
+  }
+}

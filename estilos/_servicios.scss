@@ -1,0 +1,37 @@
+.grillaservicios{
+    display: grid;
+    padding: 1rem;
+    grid-gap: 1rem;
+    grid-template-columns: 50% 49%;
+    grid-template-rows: 50% 50%;
+    grid-template-areas:
+    
+    "servtecnico consultoria"
+    "servtecnico consultoria" ;   
+}
+@media (max-width:768px){ /* reestructuramos en bajas resoluciones*/
+    .grillaservicios{        
+        grid-template-areas:        
+        "servtecnico servtecnico"
+        "consultoria consultoria";   
+    }
+    
+}
+
+.estiloservicios{
+    font-size: 200%;  
+    text-align: center;  
+    color: rgb(0, 183, 255);
+}
+
+.estiloserviciotecnico{
+    background-image: url(./img/serviciotecnico.jpg);        
+    grid-area:servtecnico;
+    height: 100vh;    
+}
+
+.estiloconsultoria{
+    background-image: url(./img/consultoria.jpg);    
+    grid-area:consultoria;
+    height: 100vh;
+}
